@@ -172,6 +172,7 @@ class MakeModuleCommand extends GeneratorCommand
         return str_replace('DummyClass', $class, $stub);
     }
 
+
     /**
      * Get the console command arguments.
      *
@@ -214,12 +215,11 @@ class MakeModuleCommand extends GeneratorCommand
     protected function makeRouteFiles($moduleName){
         $routeFileNames = array('api', 'web');
 
-        $dirName = 'Routes\\';
 
 
         foreach($routeFileNames as $fileName){
 
-            $name = $this->parseName('Modules\\'.studly_case(ucfirst($moduleName)).'\\'.$dirName.$fileName);
+            $name = $this->parseName('Modules\\'.studly_case(ucfirst($moduleName)).'\\'.$fileName);
 
             if ($this->files->exists($path = $this->getPath($name))){
                 $this->error($this->type.' already exists!');
@@ -236,5 +236,7 @@ class MakeModuleCommand extends GeneratorCommand
         $this->info('Created Route Files for Module: ' . $moduleName);
 
     }
+
+
 
 }

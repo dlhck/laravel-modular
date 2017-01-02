@@ -81,8 +81,8 @@ class ModuleServiceProvider extends ServiceProvider
 
             //API and WEB Routes
 
-            $webRoutes = app_path() . '/Modules/' . $module . '/Routes/web.php';
-            $apiRoutes = app_path() . '/Modules/' . $module . '/Routes/api.php';
+            $webRoutes = app_path() . '/Modules/' . $module . '/web.php';
+            $apiRoutes = app_path() . '/Modules/' . $module . '/api.php';
 
             if($this->moduleFiles->exists($webRoutes) ) {
                 include $webRoutes;

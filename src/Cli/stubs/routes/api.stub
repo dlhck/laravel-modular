@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * WEB Routes
+ * Module: DummyUCtitle
+ */
+
+Route::group(array('middleware' => 'auth:api', 'prefix' => 'DummyPrefix','module' => 'DummyUCtitle', 'namespace' => 'DummyNamespace\Controllers'), function() {
+
+
+
+});

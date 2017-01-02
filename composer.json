@@ -1,0 +1,23 @@
+{
+    "name": "davidhoeck/laravel-modular",
+    "description": "Adds the support of a modular approach to Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Hoeck",
+            "email": "david.hoeck@womensbest.com"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": ">=5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DavidHoeck\\LaravelModular\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

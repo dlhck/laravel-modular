@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * WEB Routes
+ * Module: DummyUCtitle
+ */
+
+
+Route::group(array('middleware' => 'web', 'prefix' => 'DummyPrefix','module' => 'DummyUCtitle', 'namespace' => 'DummyNamespace\Controllers'), function() {
+
+
+
+});

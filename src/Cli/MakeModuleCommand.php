@@ -1,9 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: davidhoeck
- * Date: 02.01.17
- * Time: 00:08
+ * Copyright by David Hoeck <david.hoeck@womensbest.com>
+ * Licensed under MIT
  */
 
 namespace DavidHoeck\LaravelModular\Cli;

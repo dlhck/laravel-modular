@@ -1,6 +1,5 @@
 # Laravel Modular
 [![Latest Stable Version](https://poser.pugx.org/davidhoeck/laravel-modular/v/stable)](https://packagist.org/packages/davidhoeck/laravel-modular)
-[![Total Downloads](https://poser.pugx.org/davidhoeck/laravel-modular/downloads)](https://packagist.org/packages/davidhoeck/laravel-modular)
 [![Latest Unstable Version](https://poser.pugx.org/davidhoeck/laravel-modular/v/unstable)](https://packagist.org/packages/davidhoeck/laravel-modular)
 [![License](https://poser.pugx.org/davidhoeck/laravel-modular/license)](https://packagist.org/packages/davidhoeck/laravel-modular)
 

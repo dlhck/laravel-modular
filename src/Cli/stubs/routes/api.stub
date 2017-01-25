@@ -1,12 +1,20 @@
 <?php
 
+<?php
+
 /**
- * WEB Routes
- * Module: DummyUCtitle
+ * @var Dingo\Api\Routing\Router
  */
+$api = app('Dingo\Api\Routing\Router');
 
-Route::group(array('middleware' => 'auth:api', 'prefix' => 'DummyPrefix','module' => 'DummyUCtitle', 'namespace' => 'DummyNamespace\Controllers'), function() {
+$config = [
+    'version' => 'v1',
+    'namespace' => 'App\Modules\DummyUCtitle\Controllers',
+];
 
 
+$api->group($config, function ($api) {
+
+    //Put your Module API Routes here
 
 });

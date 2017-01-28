@@ -314,6 +314,23 @@ class MakeModuleCommand extends GeneratorCommand
 
         $this->files->put($path, $this->buildClass($name));
     }
-
+	
+	/**
+     * Parse the name and format according to the root namespace.
+     *
+     * @param  string  $name
+     * @return string
+     */
+    protected function parseName($name)
+    {
+        $rootNamespace = $this->laravel->getNamespace();
+        if (Str::startsWith($name, $rootNamespace)) {
+            return $name;
+        }
+        if (Str::contains($name, '/')) {
+            $name = str_replace('/', '\\', $name);
+        }
+        return $this->parseName($this->getDefaultNamespace(trim($rootNamespace, '\\')).'\\'.$name);
+    }
 
 }

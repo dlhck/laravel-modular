@@ -11,6 +11,7 @@ use Illuminate\Console\GeneratorCommand;
 use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
+use Illuminate\Support\Str;
 
 
 

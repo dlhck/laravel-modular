@@ -227,7 +227,10 @@ class MakeModuleCommand extends GeneratorCommand
      * Create the module folder structure
      */
     protected function makeDirectories(){
-        $folders = array('Controllers', 'Models', 'Repositories', 'Interfaces', 'Views', 'Events', 'Jobs', 'Classes');
+        $folders = array(
+            'Controllers', 'Models', 'Repositories',
+            'Interfaces', 'Views', 'Events',
+            'Jobs', 'Classes');
 
         foreach($folders as $folder){
             $name = $this->parseName('\\Modules\\' . $this->getModuleName() . '\\' . ucfirst($folder . '\\'));

@@ -230,7 +230,7 @@ class MakeModuleCommand extends GeneratorCommand
         $folders = array(
             'Controllers', 'Models', 'Repositories',
             'Interfaces', 'Views', 'Events',
-            'Jobs', 'Classes');
+            'Jobs', 'Classes', 'Migrations', 'Mail');
 
         foreach($folders as $folder){
             $name = $this->parseName('\\Modules\\' . $this->getModuleName() . '\\' . ucfirst($folder . '\\'));

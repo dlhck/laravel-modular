@@ -95,11 +95,13 @@ class ModuleServiceProvider extends ServiceProvider
         $helperFile   = app_path().'/Modules/'.$module.'/helper.php';
         $viewFiles    = app_path().'/Modules/'.$module.'/Views';
         $transFiles   = app_path().'/Modules/'.$module.'/Translations';
+        $migrFiles    = app_path().'/Modules/'.$module.'/Migrations';
 
 
         if($this->moduleFiles->exists($helperFile)) include_once $helperFile;
         if($this->moduleFiles->isDirectory($viewFiles)) $this->loadViewsFrom($viewFiles, $module);
         if($this->moduleFiles->isDirectory($transFiles)) $this->loadTranslationsFrom($transFiles, $module);
+        if($this->moduleFiles->isDirectory($migrFiles)) $this->loadMigrationsFrom($migrFiles, $module);
 
 
     }
